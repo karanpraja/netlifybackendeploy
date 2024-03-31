@@ -1,6 +1,5 @@
 const express =require ("express")
 const serverless =require("serverless-http")
-
 const app= express()
 const router=express.Router()
 // const port=4000
@@ -12,11 +11,11 @@ router.get('/', (req, res) => {
     res.send('App is running..');
   });
   router.get('/demo', (req, res) => {
-    res.send('demo ');
+    res.json({message:'demo '});
   });
   
 
-app.use('./netlify/src/api.js',router)
+app.use('/.netlify/src/api',router)
 
 module.exports.handler=serverless(app)
 
