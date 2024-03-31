@@ -1,0 +1,23 @@
+{
+  "name": "netlifybackend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+
+  "scripts": {
+ 
+    "build": "netlify build --prod"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "install": "^0.13.0",
+    "module": "^1.2.5",
+    "netlify-cli": "^17.21.1",
+    "netlify-lambda": "^2.0.16",
+    "nodemon": "^3.1.0",
+    "serverless-http": "^3.2.0"
+  }
+}
